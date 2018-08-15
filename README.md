@@ -1,2 +1,2 @@
-# Dnyna
-Dnyna is another javaScript framework.
+# Dnyana
+Dnyana is another javaScript framework.
