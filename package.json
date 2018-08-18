@@ -1,0 +1,14 @@
+{
+  "name": "dnyana",
+  "version": "1.0.0",
+  "description": "The javaScript framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yogesh Jagdale",
+  "license": "ISC",
+  "dependencies": {
+    "uglify-js": "^3.4.7"
+  }
+}
