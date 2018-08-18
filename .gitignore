@@ -1,2 +1,5 @@
 # node deps
 node_modules
+
+# main output file name
+dnyana.js
