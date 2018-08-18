@@ -1,7 +1,7 @@
 var fs = require('fs')
 var minifier = require("uglify-js");
 var outputPath = 'dnyana.js'
-var files = ['jquery.js', 'utility.s', 'template.js', 'ruleEngine.js', 'scriptlet.js', 'rules.js'];
+var files = ['jquery.js', 'utility.js', 'template.js', 'ruleEngine.js', 'scriptlet.js', 'rules.js'];
 var os = fs.openSync(outputPath, 'w');
 
 try {
