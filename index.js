@@ -9,7 +9,8 @@ var files = [
     'template.js',
     'ruleEngine.js',
     'scriptlet.js',
-    'rules.js'
+    'rules.js',
+    'dnyanaCore.js'
 ];
 
 try {
@@ -69,5 +70,5 @@ function createTemplateCache() {
     // createFile("templateCache.js", templateCache);
     console.log('\x1b[42m', `Template Cache Created!`, '\x1b[0m')
 
-    return templateCache
+    return "var templateCache = " + new Function('templates', templateCache)
 }
