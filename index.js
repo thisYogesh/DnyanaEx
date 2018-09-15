@@ -15,12 +15,20 @@ var files = [
 try {
     let content = "";
     let templateCache = createTemplateCache();
+    let error = false
 
     for (var i = 0; i < files.length; i++) {
         let result = getFileData(`./lib/${files[i]}`);
-        content += `\n/** ===== Start of file ${files[i]} ===== **/\n`;
-        content += result.code;
-        content += `\n/** ===== End of file ${files[i]} ===== **/\n\n`;
+
+        if (!result.error) {
+            content += `\n/** ===== Start of file ${files[i]} ===== **/\n`;
+            content += result.code;
+            content += `\n/** ===== End of file ${files[i]} ===== **/\n\n`;
+        } else {
+            console.log('\x1b[41m', `Operation abort error in ${files[i]}: ${result.error}`, '\x1b[0m');
+            error = true;
+            break;
+        }
 
         // putting tamplate cache after template.js
         if (files[i] == "template.js") {
@@ -30,8 +38,10 @@ try {
         }
     };
 
-    createFile(outputPath, content)
-    console.log('\x1b[42m', `${outputPath} created!`, '\x1b[0m')
+    if (!error) {
+        createFile(outputPath, content)
+        console.log('\x1b[42m', `${outputPath} created!`, '\x1b[0m')
+    }
 } catch (e) {
     console.log('\x1b[41m', `error in ${e}, on ${e.path}`, '\x1b[0m')
 }
