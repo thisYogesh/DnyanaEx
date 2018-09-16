@@ -7,18 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="../dnyana.js"></script>
+    <script>
+        var test = new dnyana.$scriptlet({
+            data: {
+                title: "My Heading",
+                input1: 1,
+                input2: 2
+            },
+
+            methods: {
+                changeTitle: function () {
+                    this.data.title = "Title Changed!!"
+                }
+            },
+
+            template: "test"
+        });
+    </script>
 </head>
 
 <body>
     <template:test></template:test>
-
-    <script>
-        var test = new dnyana.$scriptlet({
-            template: "test"
-        });
-
-        test.run();
-    </script>
 </body>
 
 </html>
