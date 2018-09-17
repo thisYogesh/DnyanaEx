@@ -11,7 +11,7 @@ For example: `<input type="text" ::map :value="name"/>`. In this example `:value
 
 - `:if`
 
-    ```
+    ```html
     <input ::map :if="expression" type="text"/>
     ```
 - `:value`
@@ -39,7 +39,7 @@ For example: `<input type="text" ::map :value="name"/>`. In this example `:value
     Implementation is as above ^
     ```
 - `:event`
-    ```
+    ```html
     <button ::map :event="<event name>:<method name>"> Click Me! <button>
     <button ::map :event="click:listener()"> Click Me! <button>
     
@@ -50,11 +50,11 @@ For example: `<input type="text" ::map :value="name"/>`. In this example `:value
     <button ::map :event="click:listener($event)"> Click Me! <button>
     ```
 - `:class`
-    ```
+    ```html
     <span ::map :class="{'classname': condition}"></span>
     ```
 - `:loop`
-    ```
+    ```html
     <ul>
         <li ::map :loop="collection">
             <span ::map :bind="this"></span>
@@ -62,14 +62,14 @@ For example: `<input type="text" ::map :value="name"/>`. In this example `:value
     </ul>
     ```
 - `:prop-<property>`
-    ```
+    ```html
     <input ::map :prop-readonly="expression" type="text"/>
     ```
 - `:attr-<attribute>`
-    ```
+    ```html
     <input ::map :attr-id="expression" type="text"/>
     ```
 - `:data-<property>`
-    ```
+    ```html
     <input ::map :data-name="expression" type="text"/>
     ```
