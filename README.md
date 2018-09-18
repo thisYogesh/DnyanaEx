@@ -78,26 +78,25 @@ For example: `<input type="text" ::map :value="name"/>`. In this example `:value
 ## Dnyana Controller
 
 ### How to create a controller
+```javascript
+var controller = new dnyana.$controller({
+    // data to bind with template view
+    data: {
+        title: "Heading"
+    },
 
-    ```javascript
-        var controller = new dnyana.$controller({
-            // data to bind with template view
-            data: {
-                title: "Heading"
-            },
-            
-            // methods to be used for manipulation/events
-            methods: {
-                getTitle: function(){
-                    return this.data.title;
-                },
-                
-                setTitle: function(){
-                    this.data.title = "Heading Changed!!";
-                }
-            },
-            
-            // template to bind
-            template: "test" // name of template
-        });
-    ```
+    // methods to be used for manipulation/events
+    methods: {
+        getTitle: function(){
+            return this.data.title;
+        },
+
+        setTitle: function(){
+            this.data.title = "Heading Changed!!";
+        }
+    },
+
+    // template to bind
+    template: "test" // name of template
+});
+```
