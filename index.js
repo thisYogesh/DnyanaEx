@@ -8,7 +8,7 @@ var files = [
     'utility.js',
     'template.js',
     'ruleEngine.js',
-    'scriptlet.js',
+    'controller.js',
     'rules.js',
     'dnyanaCore.js'
 ];
