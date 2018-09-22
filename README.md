@@ -1,7 +1,53 @@
 # Dnyana
 Dnyana is a javaScript framework.
 
+## Create a template
+`test.html`
+```html
+<section>
+    <h1 ::map :bind="title"></h1>
+</section>
+```
 
+## Create a controller
+`script.js`
+```javascript
+var controller = new dnyana.$controller({
+    // data to bind with template view
+    data: {
+        title: "Heading"
+    },
+
+    // methods to be used for manipulation/events
+    methods: {
+        getTitle: function(){
+            return this.data.title;
+        },
+
+        setTitle: function(){
+            this.data.title = "Heading Changed!!";
+        }
+    },
+
+    // template to bind
+    template: "test" // name of template
+});
+```
+## Use $Controller and Template altogether
+`index.html`
+```html
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="../dnyana.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <!-- include [test.html] template here -->
+        <template:test/>
+    </body>
+</html>
+```
 ## Directive bindings
 In the Dnyana to bind any directive to any element you must have to tell Dnyana that this element is mapped for directive binding by adding `::map` attribute to an element.
 
@@ -73,30 +119,3 @@ For example: `<input type="text" ::map :value="name"/>`. In this example `:value
     ```html
     <input ::map :data-name="expression" type="text"/>
     ```
-
-
-## Dnyana Controller
-
-### How to create a controller
-```javascript
-var controller = new dnyana.$controller({
-    // data to bind with template view
-    data: {
-        title: "Heading"
-    },
-
-    // methods to be used for manipulation/events
-    methods: {
-        getTitle: function(){
-            return this.data.title;
-        },
-
-        setTitle: function(){
-            this.data.title = "Heading Changed!!";
-        }
-    },
-
-    // template to bind
-    template: "test" // name of template
-});
-```
