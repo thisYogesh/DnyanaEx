@@ -7,7 +7,7 @@ var test = new dnyana.$controller({
 
     methods: {
         changeTitle: function () {
-            this.data.title = "Title Changed!!"
+            this.title = "Title Changed!!"
         }
     },
 
