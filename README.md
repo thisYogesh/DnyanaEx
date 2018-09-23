@@ -44,7 +44,7 @@ var controller = new dnyana.$controller({
     </head>
     <body>
         <!-- include [test.html] template here -->
-        <template:test/>
+        <template name="test"/>
     </body>
 </html>
 ```
