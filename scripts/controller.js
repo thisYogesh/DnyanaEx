@@ -1,8 +1,6 @@
 var test = new dnyana.$controller({
     data: {
-        title: "My Heading",
-        input1: 1,
-        input2: 2
+        title: "My Heading"
     },
 
     methods: {

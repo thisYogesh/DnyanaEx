@@ -1,7 +1,7 @@
 {
-  "name": "dnyana",
+  "name": "dnyana-ex",
   "version": "1.0.0",
-  "description": "The javaScript framework",
+  "description": "The examples of Dnyana framework",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"
@@ -9,6 +9,18 @@
   "author": "Yogesh Jagdale",
   "license": "ISC",
   "dependencies": {
-    "uglify-js": "^3.4.7"
-  }
+    "dnyana": "^1.0.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisYogesh/DnyanaEx.git"
+  },
+  "keywords": [
+    "dnyana"
+  ],
+  "bugs": {
+    "url": "https://github.com/thisYogesh/DnyanaEx/issues"
+  },
+  "homepage": "https://github.com/thisYogesh/DnyanaEx#readme"
 }
