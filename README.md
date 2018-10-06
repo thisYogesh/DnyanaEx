@@ -7,7 +7,7 @@ npm install
 npm run dev
 ```
 
-### ⚜️ Create a template
+#### ⚜️ Create a template
 `test.html`
 ```html
 <section>
@@ -15,7 +15,7 @@ npm run dev
 </section>
 ```
 
-### ⚜️ Create a controller
+#### ⚜️ Create a controller
 `script.js`
 ```javascript
 var controller = new dnyana.$controller({
@@ -39,7 +39,7 @@ var controller = new dnyana.$controller({
     template: "test" // name of template
 });
 ```
-### ⚜️ Use $Controller and Template altogether
+#### ⚜️ Put $Controller in index.html
 `index.html`
 ```html
 <!doctype html>
@@ -57,7 +57,7 @@ var controller = new dnyana.$controller({
     </body>
 </html>
 ```
-### ⚜️ Directive bindings
+#### ⚜️ Directive bindings
 In the Dnyana to bind any directive to any element you must have to tell Dnyana that this element is mapped for directive binding by adding `::map` attribute to an element.
 
 For example: `<input type="text" ::map :value="name"/>`. In this example `:value` is one of the directive in Dnyana and `::map` is the attribute that must be applied on the element if you don't then Dnyana would not detect this element for binding process.
