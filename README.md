@@ -39,12 +39,15 @@ var controller = new dnyana.$controller({
 <!doctype html>
 <html>
     <head>
-        <script type="text/javascript" src="../dnyana.js"></script>
-        <script type="text/javascript" src="script.js"></script>
+        <!-- Installing Dnyana -->
+        <script src="dnyana_dist/templateCache.js"></script>
+        <script src="dnyana_dist/dnyana.js"></script>
+        
+        <script src="scripts/controller.js"></script>
     </head>
     <body>
         <!-- include [test.html] template here -->
-        <template name="test"/>
+        <template name="test"></teamplate>
     </body>
 </html>
 ```
