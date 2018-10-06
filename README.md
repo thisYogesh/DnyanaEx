@@ -16,7 +16,7 @@ npm run dev
 ```
 
 #### ⚜️ Create a controller
-`script.js`
+`controller.js`
 ```javascript
 var controller = new dnyana.$controller({
     // data to bind with template view
