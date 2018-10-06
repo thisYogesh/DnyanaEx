@@ -1,4 +1,4 @@
-# ☀️Dnyana
+# Dnyana
 Dnyana is a javaScript framework.
 
 ### ✨ Installing Dnyana
