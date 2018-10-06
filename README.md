@@ -1,7 +1,7 @@
 # Dnyana
 Dnyana is a javaScript framework.
 
-### ⚡️ Installing Dnyana
+### ✨ Installing Dnyana
 ```
 npm install
 npm run dev
